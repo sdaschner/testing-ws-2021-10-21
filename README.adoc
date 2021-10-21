@@ -21,19 +21,29 @@
   `mvn quarkus:dev -Dquarkus.test.include-pattern='*MySpecialTest'`
   `mvn quarkus:dev -Dquarkus.test.exclude-pattern=''`
 ✓ Code-level integration tests
+  `mvn test-compile failsafe:integration-test failsafe:verify`
 ✓ @QuarkusTest yes or no?
-- System / acceptance tests
+✓ System / acceptance tests
+  (mis)using Quarkus for non-Quarkus projects
+  https://blog.sebastian-daschner.com/entries/quarkus-dev-for-java-projects
+✓ Effective testing workflows
+  https://blog.sebastian-daschner.com/entries/quarkus-remote-dev-in-containers-update
+✓ Local development, IDEs, build tooling, Maven, Gradle
   Testcontainers
-- Databases & test data
-- Data migration
-- Effective testing workflows
-- Local development, IDEs, build tooling, Maven, Gradle
-- CI/CD pipelines and testing
-- Test code quality & maintainable tests
-- JVM test frameworks
-- AssertJ custom assertions
-- UI tests, Selenium, Selenide
-- Test coverage, Jacoco
-- Advanced topics: Mutation testing, performance testing
+✓ Databases & test data
+✓ Data migration
+✓ CI/CD pipelines and testing
+✓ Test code quality & maintainable tests
+  Abstraction, Delegation
+  Tip: top-down approach if possible
+✓ JVM test frameworks
+✓ AssertJ custom assertions
+✓ UI tests, Selenium, Selenide
+✓ Test coverage, Jacoco
+  Jacoco JVM Agent
+✓ Advanced topics: Mutation testing, performance testing
   https://blog.sebastian-daschner.com/entries/complex-project-setups-testcontainers
   https://blog.sebastian-daschner.com/entries/microprofile-config-plain-java
+✓ Books:
+  Domain-Driven Design
+  Clean Code

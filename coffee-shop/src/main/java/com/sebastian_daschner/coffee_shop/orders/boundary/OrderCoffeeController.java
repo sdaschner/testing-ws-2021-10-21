@@ -28,7 +28,7 @@ public class OrderCoffeeController {
     @GET
     public TemplateInstance index() {
         Set<CoffeeType> types = coffeeShop.getCoffeeTypes();
-        return orderTemplate.data("types", types);
+        return orderTemplate.data("failed", false).data("types", types);
     }
 
     @POST
