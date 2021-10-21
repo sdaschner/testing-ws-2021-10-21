@@ -1,0 +1,33 @@
+= Effective testing for Quarkus applications
+2021-10-21
+
+- Test principles & constraints
+  - execute fast, provide fast feedback
+    code level tests, per hundreds < 1s
+    integrative system test, per test ideally < 1s
+  - fast development feedback, no startup costs between test runs, turnaround time < 5s
+  - ability to refactor production code without significant test refactoring effort
+  - changes in functional behavior should only result in minimal test code changes
+  - ability to craft proper abstraction layers / delegation, tailed to domain
+  - ability to support hot-reload development modes
+  - compatibility with running & configuring test environment individually
+  - reusability of test components (technical & functional) for multiple scenarios
+- Test scopes
+  code-level unit tests, use case tests, component tests, code-level integration tests, system / acceptance tests
+- Code-level tests
+  unit tests, JUnit, AssertJ, Mockito
+- Use case tests, component tests
+- Code-level integration tests
+- @QuarkusTest yes or no?
+- System / acceptance tests
+- Databases & test data
+- Data migration
+- Effective testing workflows
+- Local development, IDEs, build tooling, Maven, Gradle
+- CI/CD pipelines and testing
+- Test code quality & maintainable tests
+- JVM test frameworks
+- AssertJ custom assertions
+- UI tests, Selenium, Selenide
+- Test coverage, Jacoco
+- Advanced topics: Mutation testing, performance testing
